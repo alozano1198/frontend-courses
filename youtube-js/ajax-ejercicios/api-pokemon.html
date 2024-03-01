@@ -66,12 +66,12 @@
               <figcaption>${pokemon.name}</figcaption>
             </figure>
             `;
-          } catch (error) {
+          } catch (err) {
             //console.log(err);
             let message = err.statusText || "Ocurrió un error";
             $template += `
             <figure>
-              <figcaption>Error ${err.statusText}: ${message}</figcaption>
+              <figcaption>Error ${err.status}: ${message}</figcaption>
             </figure>
             `;
           }
